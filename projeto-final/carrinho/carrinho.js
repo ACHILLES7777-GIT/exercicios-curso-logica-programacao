@@ -22,27 +22,12 @@ function loadCartItems() {
         cartItemsDiv.appendChild(itemDiv);
     });
 }
+// splice remove um item da lista
+const lista66 = [1,2,3,4];
 
-// Função para remover um item do carrinho
-function removeFromCart(itemIndex) {
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Remove o item do carrinho pelo índice
-    cart.splice(itemIndex, 1);
+lista66.splice(1,1)
 
-    // Atualiza o carrinho no localStorage
-    localStorage.setItem('cart', JSON.stringify(cart));
 
-    // Recarrega os itens do carrinho
-    loadCartItems();
-}
-
-// Função para finalizar a compra
-function finalizePurchase() {
-    alert('Compra finalizada com sucesso!');
-    localStorage.removeItem('cart'); // Limpa o carrinho
-    loadCartItems(); // Recarrega o carrinho vazio
-}
-
-// Carrega os itens do carrinho quando a página é carregada
-window.onload = loadCartItems;
+const lista7 = [1,2,3];
+lista7.forEach
